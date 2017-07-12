@@ -26,7 +26,7 @@ import static graphql.schema.GraphQLObjectType.newObject;
 @Component
 public class UserFields implements GraphQlFields {
 
-    @Autowired
+	@Autowired
     private UserDataFetcher userDataFetcher;
 
     @Autowired

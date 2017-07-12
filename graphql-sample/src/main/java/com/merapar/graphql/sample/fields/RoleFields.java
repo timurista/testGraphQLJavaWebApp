@@ -25,7 +25,7 @@ import static graphql.schema.GraphQLObjectType.newObject;
 @Component
 public class RoleFields implements GraphQlFields {
 
-    @Autowired
+	@Autowired
     private RoleDataFetcher roleDataFetcher;
 
     @Getter
@@ -110,4 +110,9 @@ public class RoleFields implements GraphQlFields {
                 .dataFetcher(environment -> roleDataFetcher.deleteRole(getInputMap(environment)))
                 .build();
     }
+
+	/** GETTERS **/
+	public GraphQLObjectType getRoleType() {
+		return this.roleType;
+	}
 }
