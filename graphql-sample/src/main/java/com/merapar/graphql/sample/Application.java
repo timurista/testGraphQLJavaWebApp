@@ -10,3 +10,4 @@ public class Application {
     }
 }
 
+// map main page to controller

@@ -1,0 +1,22 @@
+{
+  "name": "graphql-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node webpack ./build-conf/webpack.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "apollo-client": "^1.8.0",
+    "graphql-tag": "^2.4.2",
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.1",
+    "redux": "^3.7.1",
+    "webpack": "^3.2.0"
+  }
+}
