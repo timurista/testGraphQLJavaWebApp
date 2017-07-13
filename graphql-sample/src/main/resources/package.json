@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node webpack ./build-conf/webpack.conf.js"
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "apollo-client": "^1.8.0",
+    "babel-core": "^6.25.0",
     "graphql-tag": "^2.4.2",
     "lodash": "^4.17.4",
     "react": "^15.6.1",
@@ -18,5 +19,9 @@
     "react-router": "^4.1.1",
     "redux": "^3.7.1",
     "webpack": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.1",
+    "path": "^0.12.7"
   }
 }
