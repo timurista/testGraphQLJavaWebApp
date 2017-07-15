@@ -5,9 +5,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './client/index.js',
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './static'
+  },
   output: {
     path: path.resolve('static'),
-    filename: 'bundle.js'
+    filename: '[name].js',
+    chunkFilename: '[name]-[chunkhash].js'
   },
   module: {
     rules: [
@@ -27,6 +32,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin({ 
+      name: 'vendor', 
+      filename: 'vendor.bundle.js' 
+    }),
     new HtmlWebpackPlugin({
       template: 'client/index.html'
     })
